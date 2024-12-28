@@ -1,0 +1,394 @@
+* {
+    margin: 0.5px;
+    padding: 0;
+
+}
+
+:root {
+    --a: 0;
+}
+
+::-webkit-scrollbar {
+    opacity: 0.06;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e00;
+    opacity: 0.06;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #55555500;
+    opacity: 0.06;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #77777700;
+    opacity: 0.06;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+    opacity: 0.06;
+}
+
+body {
+    background-color: black;
+    color: wheat;
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.left-section {
+    width: 25vw;
+}
+
+.right-section {
+    width: 80vw;
+    margin: 15px 0;
+    position: relative;
+}
+
+.home-page {
+    padding: 25px;
+}
+
+.logo {
+    width: 40px;
+    padding-bottom: 18px;
+}
+
+.home-page ul li {
+    padding-top: 15px;
+    display: flex;
+    gap: 15px;
+    width: 20px;
+    list-style: none;
+}
+
+.lb-heading img {
+    width: 30px;
+}
+
+.lb-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.library-page {
+    min-height: 100vh;
+    position: relative;
+}
+
+.lb-footer {
+    margin: 0 15px;
+    display: grid;
+    grid-template-columns: 60px 150px 130px;
+    gap: 10px;
+    vertical-align: baseline;
+    font-size: 9px;
+    position: absolute;
+    bottom: 0;
+}
+
+.lb-footer a {
+    text-decoration: none;
+    color: #d5d5d5;
+}
+
+.main-head {
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    background-color: #0f0e0e
+}
+
+.arrows:hover {
+    cursor: pointer;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+.main-head>* {
+    padding: 20px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 68vh;
+    overflow-y: scroll;
+}
+
+.spotifyPlaylist .card {
+    font-size: 15px;
+    font-weight: 300;
+    width: 230px;
+    padding: 15px 15px 35px;
+    border-radius: 15px;
+}
+
+.spotifyPlaylist {
+    min-height: 107vh;
+}
+
+.card * {
+    display: flex;
+    padding-top: 3px;
+
+}
+
+.card {
+    background-color: #0f0e0e;
+    position: relative;
+    transition: all 0.8s;
+
+}
+
+.card:hover {
+    background-color: #1d1d1d;
+    cursor: pointer;
+    --a: 1;
+}
+
+.card img {
+    padding-bottom: 5px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.playButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    top: 190px;
+    right: 20px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+    cursor: pointer;
+    opacity: var(--a);
+}
+
+.playButton:hover {
+    background-color: #00c14d;
+}
+
+.playButton svg {
+    width: 36px;
+    height: 50px;
+    fill: black;
+}
+
+.main-button>* {
+    margin-top: 0px;
+    margin: 0 15px;
+
+}
+
+.signupBtn {
+    background-color: #0f0e0e;
+    color: rgba(255, 255, 255, 0.424);
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.signupBtn:hover {
+    font-size: 18px;
+    color: white;
+}
+
+.loginBtn {
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    border-radius: 25px;
+    padding: 13px;
+    font-size: 17px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 900;
+    width: 125px;
+    cursor: pointer;
+}
+
+.playBar {
+    background-color: #0f0e0e;
+    border: 2px solid rgba(255, 255, 255, 0.143);
+    border-radius: 15px;
+    width: 68vw;
+    min-height: 8vh;
+    position: fixed;
+    bottom: 55px;
+    position: fixed;
+    padding: 15px;
+}
+
+.playBar img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.songButtons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.songList {
+    font-size: 17px;
+    max-height: 55vh;
+    overflow-y: scroll;
+}
+
+.songList ul {
+    padding: 0 50px;
+}
+
+.songList ul li {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    width: 19vw;
+    background-color: #0f0e0e;
+    border: 2px solid rgba(255, 255, 255, 0.143);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px -32px;
+    list-style-type: decimal;
+    cursor: pointer;
+}
+
+.playNow {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    font-size: 15px;
+}
+
+.seekBar {
+    cursor: pointer;
+    height: 2px;
+    width: 98%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.circle {
+    position: relative;
+    left: 0%;
+    bottom: 6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 12px;
+    background-color: white;
+    transition: left 0.3s;
+}
+
+.aboutSongs {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 100%;
+}
+
+
+.close {
+    display: none;
+    position: absolute;
+    left: 348px;
+    top: 28px;
+}
+
+.songName {
+    width: 250px;
+}
+
+.songTV {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.range input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: rgb(255, 255, 255);
+    /* Slider track background */
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: white;
+    /* Slider thumb color */
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.range input[type="range"]::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range input[type="range"]:focus {
+    outline: none;
+}
+.volume:hover{
+    cursor: pointer;
+}
+
+

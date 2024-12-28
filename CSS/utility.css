@@ -1,0 +1,50 @@
+
+.bg-grey{
+    background-color: #121212;
+}
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter:invert(1) ;
+}
+.radius{
+    border-radius: 10px;
+}
+.m1{
+    margin: 5px;
+}
+.m2{
+    margin: 10px;
+}
+.m3{
+    margin: 15px;
+}
+.m4{
+    margin: 20px;
+}
+.p1{
+    padding: 10px;
+}
+.p2{
+    padding: 20px;
+}
+.p3{
+    padding: 25px;
+}
+.gap{
+    gap: 15px;
+}

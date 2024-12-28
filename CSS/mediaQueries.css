@@ -1,0 +1,142 @@
+@media (max-width:1200px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .left-section {
+        background-color: black;
+        width: calc(410px - -15px);
+        min-height: 115vh;
+        position: absolute;
+        left: -150%;
+        transition: all .3s;
+        z-index: 1;
+        border-radius: 15px;
+    }
+
+    .card:hover {
+        background-color: #1d1d1d;
+        cursor: pointer;
+        --a: 1;
+    }
+
+    .playButton {
+        opacity: var(--a);
+    }
+
+    .songTV {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger {
+        height: 35px;
+        display: block;
+        padding-right: 30px;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        left: 338px;
+        top: 28px;
+    }
+
+    .right-section {
+        width: 100vw;
+    }
+
+    .playBar {
+        width: calc(100vw - 82px);
+        font-size: 17px;
+        margin-bottom: -25px;
+
+    }
+
+    .seekBar {
+        width: calc(100vw - 80px);
+
+    }
+
+    .songName {
+        width: auto;
+    }
+
+    .songList ul li {
+        display: flex;
+        width: 285px;
+    }
+
+    .loginBtn {
+        margin: 0;
+        padding: 15px;
+        font-size: 1px;
+        width: 81px;
+    }
+
+    .signupBtn {
+        margin: 0;
+        font-size: 1px;
+    }
+
+    .aboutSongs {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .spotifyPlaylist .card {
+        font-size: 17px;
+        font-weight: 300;
+        width: 43vw;
+        padding: 1px 0 5px;
+        border-radius: 10px;
+    }
+
+    .playBar img {
+        margin-bottom: -5px;
+    }
+
+    .playButton {
+        position: absolute;
+        top: 305px;
+        right: 10px;
+    }
+
+}
+
+@media (max-width:430px) {
+    .spotifyPlaylist .card {
+        font-size: 17px;
+        font-weight: 300;
+        width: 100vw;
+        padding: 1px 0 5px;
+        border-radius: 10px;
+    }
+
+    .left-section {
+        width: calc(410px - 35px);
+    }
+.cardContainer{
+    max-height: unset;
+    overflow-y: unset;
+}
+.left-section{
+    position: fixed;
+    top: 0;
+}
+
+
+
+
+}

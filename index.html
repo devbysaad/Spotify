@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/imgs/spotifyFavicon.ico" type="spotify">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utility.css">
+    <link rel="stylesheet" href="CSS/mediaQueries.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Musice for everyone</title>
+</head>
+
+<body>
+    <header>
+        <div class="container flex bg-black">
+            <div class="left-section">
+                <div class="close invert">
+                    <img src="assets/imgs/cross.svg" alt="">
+                </div>
+                <!-- home ider ha -->
+                <!-- 😊👍 -->
+                <div class="home-page bg-grey radius m1 p1">
+                    <div class="logo">
+                        <img class="invert" src="assets/imgs/logo.svg" alt="" style="width: 100px" ;>
+                    </div>
+                    <ul>
+                        <li><img class="invert" src="assets/imgs/home.svg" alt="Home-Page">Home</li>
+                        <li><img class="invert" src="assets/imgs/search.svg" alt="Search">Seacrh</li>
+                    </ul>
+                </div>
+                <!-- library bhi ider hi ha -->
+                <!-- 😊👍 -->
+                <div class="library-page bg-grey radius m1 p1">
+                    <div class="lb-heading">
+                        <img class="invert" src="assets/imgs/library.svg" alt="">
+                        <h4>Your Library</h4>
+                    </div>
+                    <div class="songList">
+                        <ul>
+
+                        </ul>
+                    </div>
+                    <div class="lb-footer p1">
+                        <div><a href="https://www.spotify.com/pk-en/legal/">Legal</a></div>
+                        <div><a href="https://www.spotify.com/pk-en/safetyandprivacy/">Safety &amp; Privacy Center</a>
+                        </div>
+                        <div><a href="https://www.spotify.com/pk-en/legal/privacy-policy/">Privacy Policy</a></div>
+                        <div><a href="https://www.spotify.com/pk-en/legal/cookies-policy/">Cookies</a></div>
+                        <div><a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3">About Ads</a></div>
+                        <div><a href="https://www.spotify.com/pk-en/accessibility/">Accessibility</a> </div>
+                        <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                            rel="noopener">Cookies</a>
+                    </div>
+                </div>
+                <!-- ye left section ke div ki ending ha😘 -->
+            </div>
+            <div class="right-section bg-grey radius">
+                <!-- yeha pr uper wala kam khamtam ho gaya ha -->
+                <!-- ☝️😊👍 -->
+                <!-- yeha se main shuru ho raha ha -->
+                <div class="main-head radius">
+                    <div class="nav">
+                        <img class="invert hamburger" src="assets/imgs/hamburger.svg" alt="">
+                        <img class="invert arrows" src="assets/imgs/left.svg" alt="">
+                        <img class="invert arrows" src="assets/imgs/right.svg" alt="">
+                    </div>
+                    <div class="main-button">
+                        <button class="signupBtn btns">Sign Up</button>
+                        <button class="loginBtn btns">Log in</button>
+                    </div>
+                </div>
+                <main class="spotifyPlaylist p2">
+                    <h2 class="p1">Spotify Playlist</h2>
+                    <div class="cardContainer">
+                        <!-- mari jan😘 ye card ha -->
+                    </div>
+                    <!-- or😘 ye card ki ending ha -->
+                    <div class="playBar">
+                        <div class="seekBar">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="aboutSongs">
+                            <div class="songName">
+                                <div class="songinfo"></div>
+                            </div>
+                            <div class="songButtons">
+                                <img width="50" id="previous" class="invert" src="assets/imgs/previous.svg" alt="">
+                                <img width="50" id="play" class="invert" src="assets/imgs/play.svg" alt="">
+                                <img width="50" id="next" class="invert" src="assets/imgs/next.svg" alt="">
+                            </div>
+                            <div class="songTV">
+                            <div class="songTime">
+                            </div>
+                            <div class="volume">
+                                <img width="40" id="volume" class="invert" src="assets/imgs/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="volumeRange">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+            </main>
+            <!-- ye right section ke div ki ending ha😘 -->
+        </div>
+        </div>
+
+    </header>
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
